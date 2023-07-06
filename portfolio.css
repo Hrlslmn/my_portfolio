@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: start;
+    padding: 15px 25px;
+    height: 80px;
+}
+.list{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.list-item{
+    font-size: 20px;
+    font-weight: 600;
+}
+.list-item a{
+  text-decoration: none;
+  color: black;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+    row-gap: 30px;
+}
+.hero-title{
+    font-size: 30px;
+    font-weight: 600;
+}
+/* CSS */
+.button-50 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+.button-50 a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+.about-top{
+  position: relative;
+  height: 150px;
+  width: 600px;
+  background-color: #000;
+
+}
+.text-top{
+  width: 100%;
+  position: absolute;
+  font-weight: 800;
+  font-size: 60px;
+  color: whitesmoke;
+  align-items: center;
+  top: 25px;
+}
+.about-bottom{
+  position: relative;
+  height: 250px;
+  width: 600px;
+  background-color: #ffffff;
+  text-shadow: -1px 2px 2px rgb(167, 167, 167);
+  border:2px solid black;
+  box-shadow: -2px 2px 2px rgb(197, 196, 196);
+}
+.about-bottom p{
+  padding: 12px;
+  width: 100%;
+  position: absolute;
+  font-weight: 800;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  top: 30px;
+  
+}
+.about-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+}
+.about-desc p{
+    text-align: center;
+}
+.about-image{
+    max-width: 400px;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+}
+.scroll {
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin: 20px 0;
+    padding: 0;
+    border-top:10px double black;
+    border-bottom:10px double black;
+  }
+  
+  .m-scroll {
+    overflow: hidden;
+    height: 100%;
+    white-space: nowrap;
+    animation: scrollText 18s infinite linear;
+    margin: 0;
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+  }
+  
+  .scrollitem {
+    display: inline-block;
+    color: white;
+    margin: 50px ;
+  }
+
+  span svg{
+    width: 150px;
+    margin: 100px 150px;
+  }
+  
+  @keyframes scrollText {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+
+@media screen and (max-width:1300px) {
+    .about-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:800px) {
+    .list-item{
+      font-size: 13px;
+    }
+    span svg{
+        width: 150px;
+    }
+    .about-image img{
+        width: 300px;
+    }
+    .hero-title{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .about-top{
+      position: relative;
+      height: 100px;
+      width: 300px;
+      background-color: #000;
+      box-shadow: -2px 1px 5px black;
+    }
+    .text-top{
+      width: 100%;
+      position: absolute;
+      font-weight: 800;
+      font-size: 50px;
+      color: whitesmoke;
+      align-items: center;
+      top: 20px;
+    }
+    .about-bottom{
+      position: relative;
+      height: 100px;
+      width: 300px;
+      background-color: #ffffff;
+      box-shadow: -2px 1px 5px black;
+      margin-bottom: 18px;
+    }
+    .about-bottom p{
+      padding: 12px;
+      width: 100%;
+      position: absolute;
+      font-weight:bolder;
+      font-size: 15px;
+      color: rgb(0, 0, 0);
+      align-items: center;
+      top: 8px;
+    }
+    span svg{
+      width: 100px;
+      margin: 50px 50px;
+    }
+}
