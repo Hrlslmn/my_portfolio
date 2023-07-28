@@ -34,11 +34,11 @@
 }
 .designDescription{
     color: antiquewhite;
-    place-self: center;
+    place-items: center;
     padding: 10px 30px;
 }
 .designBtn{
-    justify-self: center;
+    justify-self: start;
     padding: 5px 15px;
     border-radius: 5px;
 
@@ -55,7 +55,17 @@
     .gridItem{
         grid-template-columns: 1fr;
     }
-    .designDescription h2{
-        text-align: center;
+    .designDescription{
+        align-items: start;
+        justify-content: start;
+    }
+    .designBtn{
+        justify-self: center;
+    }
+    .designImage{
+        margin-right: 10px;
+        border: 2px solid rgb(252, 252, 86);
+        box-shadow: -2px 2px 2px rgb(0, 0, 0);
+        border-radius: 5px;
     }
 }
