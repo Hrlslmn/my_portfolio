@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+/**Navbar**/
+.navbar{
+    border-bottom:2px solid rgb(241, 241, 97);
+}
+.navbar-toggler{
+    background-color: rgb(252, 252, 86) ;
+}
+.nav-link{
+    color: rgb(192, 192, 192);
+}
+.nav-link:hover{
+    color: rgb(252, 252, 86);
+}
+.navbar-brand{
+    color: rgb(252, 252, 86);
+    font-size: 35px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+}
+.gridContainer{
+    display: grid;
+    row-gap: 50px;
+}
+.gridItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0px 20px 0px;
+}
+.designImage{
+    width: 100%;
+    height: auto;
+}
+.designDescription{
+    color: antiquewhite;
+    place-self: center;
+    padding: 10px 30px;
+}
+.designBtn{
+    justify-self: center;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+    border: 2px solid whitesmoke;
+    background-color: rgb(252, 252, 86);
+}
+.designBtn a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+@media screen and (max-width:1000px) {
+    .gridItem{
+        grid-template-columns: 1fr;
+    }
+    .designDescription h2{
+        text-align: center;
+    }
+}

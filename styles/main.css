@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**Navbar**/
+.navbar{
+    border-bottom:2px solid rgb(241, 241, 97);
+}
+.navbar-toggler{
+    background-color: rgb(252, 252, 86) ;
+}
+.nav-link{
+    color: rgb(192, 192, 192);
+}
+.nav-link:hover{
+    color: rgb(252, 252, 86);
+}
+.navbar-brand{
+    color: rgb(252, 252, 86);
+    font-size: 35px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+}
+
+/**Header**/
+.headerContainer{
+    margin: 20px;
+    position: relative;
+    border: 4px solid rgb(241, 241, 97);
+}
+.headerImage{
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+.headerDescription{
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+}
+.headerName{
+    color: rgb(252, 252, 86);
+    font-size: 120px;
+    font-weight: 600;
+    text-shadow: -2px 2px 2px black;
+    font-family: 'League Spartan', sans-serif;
+}
+.headerSkills{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 50px;
+    text-shadow: -2px 2px 2px black;
+    font-family: 'League Spartan', sans-serif;
+}
+.headerSubdesc{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 30px;
+    text-shadow: -2px 2px 2px black;
+    font-family: 'League Spartan', sans-serif;
+}
+
+@media screen and (max-width:1300px) {
+    .headerName{
+        font-size: 90px;
+    }
+    .headerSkills{
+        font-size: 50px ;
+    }
+}
+@media screen and (max-width:1000px) {
+    .headerName{
+        font-size: 50px;
+        -webkit-text-stroke:0px;
+        color:rgb(245, 245, 94)
+    }
+    .headerSkills{
+        font-size: 30px ;
+        -webkit-text-stroke:0px;
+
+    }
+}
+@media screen and (max-width:700px) {
+    .headerDescription{
+        position: absolute;
+        bottom: 10%;
+        left: 4%;
+    }
+    .headerName{
+        font-size: 30px;
+        -webkit-text-stroke:0px;
+        color:rgb(245, 245, 94)
+    }
+    .headerSkills{
+        font-size: 20px ;
+        -webkit-text-stroke:0px;
+
+    }
+    .navbar-brand{
+        font-size: 30px;
+    }
+}
