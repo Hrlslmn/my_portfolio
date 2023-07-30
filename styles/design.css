@@ -1,8 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
 
+
+.parallax{
+      /* The image used */
+  background-image: url("../assets/layered-waves-haikei.svg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+body{
+    background-color: #001220
+}
 /**Navbar**/
 .navbar{
     border-bottom:2px solid rgb(241, 241, 97);
+    background-color: #001829;
 }
 .navbar-toggler{
     background-color: rgb(252, 252, 86) ;
@@ -31,11 +49,20 @@
 .designImage{
     width: 100%;
     height: auto;
+    border: 2px solid rgb(252, 252, 86);
+    box-shadow: -2px 2px 2px rgb(0, 0, 0);
+    border-radius: 5px;
 }
 .designDescription{
     color: antiquewhite;
     place-items: center;
     padding: 10px 30px;
+}
+.designDescription h2{
+    font-size: 40px;
+    color: #ffffff;
+    -webkit-text-stroke: #1e62af;
+    -webkit-text-stroke-width: 1px;
 }
 .designBtn{
     justify-self: start;
@@ -50,6 +77,21 @@
     font-weight: 600;
     color: black;
 }
+/**Main**/
+
+.descriptionList{
+    color: #6198c0;
+    font-weight: 600;
+}
+
+/**Footer**/
+.footerLink{
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(252, 252, 86);
+}
+
 
 @media screen and (max-width:1000px) {
     .gridItem{
@@ -67,5 +109,9 @@
         border: 2px solid rgb(252, 252, 86);
         box-shadow: -2px 2px 2px rgb(0, 0, 0);
         border-radius: 5px;
+    }
+    .parallax{
+        border: none;
+        border-radius: 0px;
     }
 }

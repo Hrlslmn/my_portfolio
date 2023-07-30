@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
 
+body{
+    background-color: #001220
+}
+
 /**Navbar**/
 .navbar{
     border-bottom:2px solid rgb(241, 241, 97);
@@ -18,4 +22,73 @@
     font-size: 35px;
     font-family: 'League Spartan', sans-serif;
     font-weight: 600;
+}
+/**Main**/
+main h1{
+    text-align: center;
+    color: rgb(241, 241, 97);
+    margin: 30px;
+}
+.mainContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin-top: 30px;
+}
+.projectContainer{
+    max-width: 600px;
+
+}
+.projectContainer h2{
+    text-align: center;
+    margin: 20px;
+}
+.projectContainer img{
+    width: 100%;
+    height: auto;
+    border: 2px solid rgb(241, 241, 97);
+    border-radius: 5px;
+}
+.detailList{
+    text-align: center;
+    padding: 20px;
+}
+.detailList li{
+    list-style: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.viewBtn{
+    border: 2px solid black;
+    padding: 5px;
+    background-color: rgb(241, 241, 97);
+    border-radius: 5px ;
+}
+.viewBtn a{
+    text-decoration: none;
+    font-weight:700;
+    color: #001220;
+}
+/**Footer**/
+.footerLink{
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(252, 252, 86);
+}
+
+@media screen and (max-width:1500px){
+    .projectContainer{
+        max-width: 400px;
+    }
+}
+@media screen and (max-width:1200px){
+    .projectContainer{
+        max-width: 800px;
+        margin: 20px;
+    }
+    .mainContainer{
+        grid-template-columns: 1fr;
+    }
 }
