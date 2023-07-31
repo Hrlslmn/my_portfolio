@@ -132,16 +132,13 @@ body{
 @media screen and (max-width:1000px) {
     .headerName{
         font-size: 50px;
-        -webkit-text-stroke:0px;
         color:rgb(245, 245, 94)
     }
     .headerSkills{
         font-size: 30px ;
-        -webkit-text-stroke:0px;
     }
     .headerSubdesc{
         font-size: 20px ;
-        -webkit-text-stroke:0px;
     }
     .aboutMeContainer{
         grid-template-columns: 1fr;
@@ -163,17 +160,15 @@ body{
     .headerName{
         font-size: 30px;
         top:0;
-        -webkit-text-stroke:0px;
         color:rgb(245, 245, 94);
         text-shadow: none;
     }
     .headerSkills{
         font-size: 20px ;
-        -webkit-text-stroke:0px;
+
     }
     .headerSubdesc{
         font-size: 13px ;
-        -webkit-text-stroke:0px;
     }
     .navbar-brand{
         font-size: 30px;
