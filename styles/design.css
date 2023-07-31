@@ -61,8 +61,6 @@ body{
 .designDescription h2{
     font-size: 40px;
     color: #ffffff;
-    -webkit-text-stroke: #1e62af;
-    -webkit-text-stroke-width: 1px;
 }
 .designBtn{
     justify-self: start;
