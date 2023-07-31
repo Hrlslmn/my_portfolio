@@ -26,14 +26,19 @@ body{
 /**Main**/
 main h1{
     text-align: center;
-    color: rgb(241, 241, 97);
-    margin: 30px;
+    color:#6767e6;
+    margin: 35px;
+    font-weight: 700;
+    border: 2px solid rgb(252, 252, 86);
+    border-radius: 25px;
+    padding: 5px;
 }
 .mainContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     margin-top: 30px;
+
 }
 .projectContainer{
     max-width: 600px;
@@ -43,6 +48,10 @@ main h1{
     text-align: center;
     margin: 20px;
 }
+
+.projTitle{
+    color: rgb(252, 252, 86);
+}
 .projectContainer img{
     width: 100%;
     height: auto;
@@ -50,7 +59,7 @@ main h1{
     border-radius: 5px;
 }
 .detailList{
-    text-align: center;
+    text-align: start;
     padding: 20px;
 }
 .detailList li{
@@ -90,5 +99,10 @@ main h1{
     }
     .mainContainer{
         grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:700px){
+    .detailList{
+        font-size: 15px;
     }
 }
