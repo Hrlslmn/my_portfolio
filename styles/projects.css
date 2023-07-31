@@ -63,7 +63,6 @@ main h1{
     padding: 20px;
 }
 .detailList li{
-    list-style: none;
     color: white;
     font-weight: 600;
     font-size: 20px;
