@@ -164,7 +164,8 @@ body{
         font-size: 30px;
         top:0;
         -webkit-text-stroke:0px;
-        color:rgb(245, 245, 94)
+        color:rgb(245, 245, 94);
+        text-shadow: none;
     }
     .headerSkills{
         font-size: 20px ;
