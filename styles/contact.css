@@ -22,10 +22,40 @@ body{
     font-weight: 600;
 }
 
+/**Main**/
+.mainContainer{
+    margin-top: 30px;
+    padding: 40px;
+    height: 60vh;
+}
+.contactTitle{
+    color: rgb(252, 252, 86);
+    font-size: 45px;
+    text-align: center;
+    border: 4px solid rgb(241, 241, 97);
+    padding: 10px;
+}
+.email{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
 /**Footer**/
 .footerLink{
     font-weight: 600;
     text-decoration: none;
     font-size: 17px;
     color: rgb(252, 252, 86);
+}
+
+@media screen and (max-width:700px){
+    .contactTitle{
+        font-size: 35px;
+    }
+    .email{
+        font-size: 25px;
+
+    }
 }
